@@ -14,7 +14,6 @@ public class MainClass {
 		Student student = ctx.getBean("student",Student.class); // 컨테이너 사용
 		System.out.println(student.getName());
 		
-		ctx.close();
+		ctx.close(); // 스프링 컨테이너 종료
 	}
-
 }
